@@ -1,0 +1,13 @@
+{
+  "defaultAssembly": "飞鸟易购网.DAL",
+  "components": [
+    {
+      "type": "飞鸟易购网.DAL.DbContext,飞鸟易购网.DAL",
+      "services": [
+        {
+          "type": "SmartLinli.DatabaseDevelopement.SmartDbContext,SmartLinli.DatabaseDevelopement"
+        }
+      ]
+    }
+  ]
+}

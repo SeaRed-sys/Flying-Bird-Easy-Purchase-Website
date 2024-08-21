@@ -1,0 +1,147 @@
+﻿input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-image: url(/Images/Login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    display: flex;
+}
+
+.inner {
+    width: 600px;
+    height: 800px;
+    position: relative;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 6px rgba(255, 255, 255, 0.3), 2px 2px 15px rgba(0, 0, 0, 0.5);
+    transition: all linear 0.2s;
+}
+
+    .inner:hover {
+        box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.9), 4px 4px 25px rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(7px);
+    }
+
+.user, .pass {
+    width: 230px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    background-color: ghostwhite;
+    box-shadow: inset 1px 1px 5px gainsboro;
+    transition: all 0.2s linear;
+}
+
+    .user:focus, .pass:focus {
+        border: 1px solid deepskyblue;
+        box-shadow: inset 1px 1px 5px deepskyblue;
+    }
+
+input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder {
+    color: deepskyblue;
+}
+
+.login, .U, .user, .P,
+.pass, .forget, .button,
+.footer, .or, .divider {
+    position: absolute;
+}
+
+.login {
+    font-size: 40px;
+    top: 120px;
+    left: 260px;
+    font-family: 'login';
+    font-weight: bold;
+    color: white;
+}
+
+.U {
+    top: 200px;
+    left: 175px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.user {
+    top: 222px;
+    left: 175px;
+}
+
+.P {
+    top: 276px;
+    left: 175px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.pass {
+    top: 302px;
+    left: 175px;
+}
+
+.forget {
+    top: 340px;
+    left: 353px;
+    cursor: pointer;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    background-color: deepskyblue;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px deepskyblue;
+    top: 370px;
+    left: 255px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+    .button:hover {
+        width: 251px;
+        height: 80px;
+        border-radius: 20px;
+        left: 175px;
+    }
+
+.footer {
+    top: 458px;
+    left: 242px;
+}
+
+.divider {
+    top: 490px;
+    left: 155px;
+}
+
+.divider-text {
+    margin: 0 30px;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+}

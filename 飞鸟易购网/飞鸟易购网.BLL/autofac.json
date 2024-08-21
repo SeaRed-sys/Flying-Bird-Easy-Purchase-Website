@@ -1,0 +1,13 @@
+{
+  "defaultAssembly": "飞鸟易购网.BLL",
+  "components": [
+    {
+      "type": "飞鸟易购网.BLL.DbContext,飞鸟易购网.BLL",
+      "services": [
+        {
+          "type": "SmartLinli.DatabaseDevelopement.SmartDbContext,SmartLinli.DatabaseDevelopement"
+        }
+      ]
+    }
+  ]
+}

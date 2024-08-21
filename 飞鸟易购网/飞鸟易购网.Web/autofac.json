@@ -1,0 +1,13 @@
+{
+  "defaultAssembly": "",
+  "components": [
+    {
+      "type": ".DbContext,",
+      "services": [
+        {
+          "type": "SmartLinli.DatabaseDevelopement.SmartDbContext,SmartLinli.DatabaseDevelopement"
+        }
+      ]
+    }
+  ]
+}

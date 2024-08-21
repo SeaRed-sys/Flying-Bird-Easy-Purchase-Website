@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_FeiNiao.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="~/SearchUserControl.ascx" TagPrefix="uc1" TagName="SearchUserControl" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="App_Themes/样式表/主页面样式1.css" rel="stylesheet" />
+    <link href="App_Themes/样式表/主页面样式2.css" rel="stylesheet" />
+    <link href="App_Themes/样式表/跟踪导航栏.css" rel="stylesheet" />
+    <link rel="icon" href="Logo .ico" type="text/x-html-insertion" />
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>飞鸟易购网——专业手机零售O2O平台,正品手机、笔记本、平板电脑，正品行货，确保低价，配送及时！</title>
+    
+</head>
+<body>
+<form id="form1" runat="server">
+    <!-- header section starts -->
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">F飞鸟易购网<span>.</span></a>
+       
+        <nav class="navbar">
+            <asp:Button ID="btn_HomePage" OnClick="btn_HomePage_Click"  Text="首页" runat="server" Font-Size="22px"  BorderStyle="None" ForeColor="#666"  BackColor="White" Width="100px"/>
+            <asp:Button ID="btn_Products" runat="server" OnClick="btn_Products_Click"  Text="产品"  Font-Size="22px" BorderStyle="None" ForeColor="#666"  BackColor="White" Width="100px" />
+            <asp:Button ID="btn_Shoped" runat="server" OnClick="btn_Shoped_Click"  Text="购物车"   Font-Size="22px" BorderStyle="None" ForeColor="#666"  BackColor="White" Width="130px"/>
+            <asp:Button ID="btn_Contact" runat="server" OnClick="btn_Contact_Click"  Text="联系我们"  Font-Size="22px" BorderStyle="None" ForeColor="#666"  BackColor="White" Width="150px" />
+            <asp:Button ID="btn_Mine" runat="server" OnClick="btn_Mine_Click"  Text="我的"   Font-Size="22px" BorderStyle="None" ForeColor="#666"  BackColor="White" Width="100px"/>
+            <%--<a href="#home">首页</a>
+            <a href="#about">产品</a>
+            <a href="#products">购物车</a>
+            <a href="#review">联系我们</a>
+            <a href="#contact">我的</a>--%>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+            <asp:Label ID="lblUserName" runat="server" Font-Size="15px"></asp:Label>
+        </div>
+    </header>
+    <!--主题内容 Starts--->
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!--主题内容 Ends--->
+    <!-- icons section stards -->
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Image/icon1.png"   />
+            //<img src="Image/icon2.png"  alt=""/>
+            <div class="info">
+                <h3>免费配送</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/icon1.png"   />
+            //<img src="Image/icon2.png"  alt=""/>
+            <div class="info">
+                <h3>10天无理由退货</h3>
+                <span>moneyback garantee</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/icon3.png"   />
+             //<img src="Image/icon3.png"  alt=""/>
+             <div class="info">
+                 <h3>优质 & 精品</h3>
+                 <span>on all orders</span>
+             </div>
+        </div>
+
+        <div class="icons">
+             <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/icon4.png"   />
+             //<img src="Images/icon4.png"  alt=""/>
+             <div class="info">
+                 <h3>安全 支付</h3>
+                 <span>protected by payment</span>
+             </div>
+        </div>
+    </section>
+   
+    <!-- icons section ends -->
+
+    <!-- footer section starts-->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>新手指南</h3>
+                <a href="#">常见问题解答</a>
+                <a href="#">会员注册与使用</a>
+                <a href="#">会员介绍</a>
+            </div>
+            <div class="box">
+                <h3>配送方式</h3>
+                <a href="#">到店自提</a>
+                <a href="#">送货上门</a>
+                <a href="#">快速运输</a>
+            </div>
+            <div class="box">
+                <h3>售后服务</h3>
+                <a href="#">售后服务政策</a>
+                <a href="#">分期介绍</a>
+                <a href="#">退款介绍</a>
+            </div>
+            <div class="box">
+                <h3>联系方式</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">example@gmail.com</a>
+                <a href="#">mumbai,india-400104</a>
+                <asp:Image ID="img_Payment" runat="server" ImageUrl="~/Image/payment.png" />
+            </div>
+            
+        </div>
+        <div class="credit">created by <span>mr.web 飞鸟易购网</span>|all right reserved</div>
+
+    </section>
+
+    <!-- footer section ends-->
+</form>
+</body>
+</html>

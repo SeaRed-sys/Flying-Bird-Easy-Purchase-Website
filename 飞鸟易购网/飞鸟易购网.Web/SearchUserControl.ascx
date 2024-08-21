@@ -1,0 +1,3 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SearchUserControl.ascx.cs" Inherits="WebUserControl" %>
+<asp:TextBox ID="txtSearchKey" runat="server" Height="30px" Width="450px" BorderColor="Red" BorderStyle="Outset"></asp:TextBox>
+<asp:Button ID="btnSearch" runat="server" OnClick="BtnSearch_Click" Text="搜索"  Height="32px" Width="70px" BackColor="Red" BorderColor="Red" BorderStyle="Outset" ForeColor="White"/>

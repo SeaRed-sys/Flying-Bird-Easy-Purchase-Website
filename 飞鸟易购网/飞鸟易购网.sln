@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "飞鸟易购网.Web", "飞鸟易购网.Web\", "{4B774709-E68A-4FA4-84B5-D60DF9A22708}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{1ca4cf8a-af67-49eb-bac2-8252b5227080}|飞鸟易购网.BLL.dll;{D3BF3829-8453-4C86-A7DE-B7D75CD02D36}|飞鸟易购网.DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57434"
+		Debug.AspNetCompiler.PhysicalPath = "飞鸟易购网.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57434\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57434"
+		Release.AspNetCompiler.PhysicalPath = "飞鸟易购网.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57434\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57434"
+		SlnRelativePath = "飞鸟易购网.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "飞鸟易购网.BLL", "飞鸟易购网.BLL\飞鸟易购网.BLL.csproj", "{1CA4CF8A-AF67-49EB-BAC2-8252B5227080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "飞鸟易购网.DAL", "飞鸟易购网.DAL\飞鸟易购网.DAL.csproj", "{D3BF3829-8453-4C86-A7DE-B7D75CD02D36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B774709-E68A-4FA4-84B5-D60DF9A22708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B774709-E68A-4FA4-84B5-D60DF9A22708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B774709-E68A-4FA4-84B5-D60DF9A22708}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B774709-E68A-4FA4-84B5-D60DF9A22708}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{1CA4CF8A-AF67-49EB-BAC2-8252B5227080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA4CF8A-AF67-49EB-BAC2-8252B5227080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA4CF8A-AF67-49EB-BAC2-8252B5227080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA4CF8A-AF67-49EB-BAC2-8252B5227080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3BF3829-8453-4C86-A7DE-B7D75CD02D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BF3829-8453-4C86-A7DE-B7D75CD02D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3BF3829-8453-4C86-A7DE-B7D75CD02D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3BF3829-8453-4C86-A7DE-B7D75CD02D36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7872C6E-05C4-41DF-B635-AC911A5AB810}
+	EndGlobalSection
+EndGlobal
